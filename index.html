@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Browser extensions manager UI</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body> <!-- class="dark-theme" -->
+  <div class="container">
+    <div class="wrapper">
+      <div class="header">
+        <div class="header-logo">
+          <img class="logo" id="logo" src="assets/images/logo-dark.svg" alt="logo">
+        </div>
+        <div class="header-moon">
+          <img id="theme-icon" class="moon" src="assets/images/icon-moon.svg" alt="moon"> <!-- img sun icon -->
+        </div>
+      </div>
+      <div class="main-box">
+        <div class="heading-buttons">
+          <div>
+            <h3 class="main__heading">Extensions List</h3>
+          </div>
+          <div>
+            <a href="" id="link-all" class="all-active active">All</a>
+            <a href="" id="link-active" class="all-active">Active</a>
+            <a href="" id="link-inactive" class="all-active">Inactive</a>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div class="grid-box" data-id="card1">
+            <div class="above">
+              <img class="above-img" src="assets/images/logo-devlens.svg" alt="extensions-icon">
+              <div>
+                <h5>DevLens</h5>
+                <p>Quickly inspect page layouts and visualize element boundaries.</p>
+              </div>
+            </div>
+            <div class="beyond">
+              <div>
+                <button class="remove-btn">Remove</button>
+              </div>
+              <label class="switch switch-on">
+                <input type="checkbox" name="extension" id="extension">
+                <span class="toggle-slider toggle-red"></span>
+              </label>
+            </div>
+          </div>
+          <div class="grid-box" data-id="card2">
+            <div class="above">
+              <img class="above-img" src="assets/images/logo-style-spy.svg" alt="extensions-icon">
+              <div>
+                <h5>StyleSpy</h5>
+                <p>Instantly analyze and copy CSS from any webpage element.</p>
+              </div>
+            </div>
+            <div class="beyond">
+              <div>
+                <button class="remove-btn">Remove</button>
+              </div>
+              <label class="switch switch-on">
+                <input type="checkbox" name="extension" id="extension">
+                <span class="toggle-slider toggle-red"></span>
+              </label>
+            </div>
+          </div>
+          <div class="grid-box" data-id="card3">
+            <div class="above">
+              <img class="above-img" src="assets/images/logo-speed-boost.svg" alt="extensions-icon">
+              <div>
+                <h5>SpeedBoost</h5>
+                <p>Optimizes browser resource usage to accelerate page loading.</p>
+              </div>
+            </div>
+            <div class="beyond">
+              <div>
+                <button class="remove-btn">Remove</button>
+              </div>
+              <label class="switch">
+                <input type="checkbox" name="extension" id="extension">
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="grid-box" data-id="card4">
+            <div class="above">
+              <img class="above-img" src="assets/images/logo-json-wizard.svg" alt="extensions-icon">
+              <div>
+                <h5>JSONWizard</h5>
+                <p>Formats, validates, and prettifies JSON responses in-browser.</p>
+              </div>
+            </div>
+            <div class="beyond">
+              <div>
+                <button class="remove-btn">Remove</button>
+              </div>
+              <label class="switch switch-on">
+                <input type="checkbox" name="extension" id="extension">
+                <span class="toggle-slider toggle-red"></span>
+              </label>
+            </div>
+          </div>
+          <div class="grid-box" data-id="card5">
+            <div class="above">
+              <img class="above-img" src="assets/images/logo-tab-master-pro.svg" alt="extensions-icon">
+              <div>
+                <h5>TabMaster Pro</h5>
+                <p>Organizes browser tabs into groups and sessions.</p>
+              </div>
+            </div>
+            <div class="beyond">
+              <div>
+                <button class="remove-btn">Remove</button>
+              </div>
+              <label class="switch switch-on">
+                <input type="checkbox" name="extension" id="extension">
+                <span class="toggle-slider toggle-red"></span>
+              </label>
+            </div>
+          </div>
+          <div class="grid-box" data-id="card6">
+            <div class="above">
+              <img class="above-img" src="assets/images/logo-viewport-buddy.svg" alt="extensions-icon">
+              <div>
+                <h5>ViewportBuddy</h5>
+                <p>Simulates various screen resolutions directly within the browser.</p>
+              </div>
+            </div>
+            <div class="beyond">
+              <div>
+                <button class="remove-btn">Remove</button>
+              </div>
+              <label class="switch">
+                <input type="checkbox" name="extension" id="extension">
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="grid-box" data-id="card7">
+            <div class="above">
+              <img class="above-img" src="assets/images/logo-markup-notes.svg" alt="extensions-icon">
+              <div>
+                <h5>Markup Notes</h5>
+                <p>Enables annotation and notes directly onto webpages for collaborative debugging.</p>
+              </div>
+            </div>
+            <div class="beyond beyond-markup">
+              <div>
+                <button class="remove-btn">Remove</button>
+              </div>
+              <label class="switch switch-on">
+                <input type="checkbox" name="extension" id="extension">
+                <span class="toggle-slider toggle-red"></span>
+              </label>
+            </div>
+          </div>
+          <div class="grid-box" data-id="card8">
+            <div class="above">
+              <img class="above-img" src="assets/images/logo-grid-guides.svg" alt="extensions-icon">
+              <div>
+                <h5>GridGuides</h5>
+                <p>Overlay customizable grids and alignment guides on any webpage.</p>
+              </div>
+            </div>
+            <div class="beyond">
+              <div>
+                <button class="remove-btn">Remove</button>
+              </div>
+              <label class="switch">
+                <input type="checkbox" name="extension" id="extension">
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="grid-box" data-id="card9">
+            <div class="above">
+              <img class="above-img" src="assets/images/logo-palette-picker.svg" alt="extensions-icon">
+              <div>
+                <h5>Palette Picker</h5>
+                <p>Instantly extracts color palettes from any webpage.</p>
+              </div>
+            </div>
+            <div class="beyond">
+              <div>
+                <button class="remove-btn">Remove</button>
+              </div>
+              <label class="switch switch-on">
+                <input type="checkbox" name="extension" id="extension">
+                <span class="toggle-slider toggle-red"></span>
+              </label>
+            </div>
+          </div>
+          <div class="grid-box" data-id="card10">
+            <div class="above">
+              <img class="above-img" src="assets/images/logo-link-checker.svg" alt="extensions-icon">
+              <div>
+                <h5>LinkChecker</h5>
+                <p>Scans and highlights broken links on any page.</p>
+              </div>
+            </div>
+            <div class="beyond">
+              <div>
+                <button class="remove-btn">Remove</button>
+              </div>
+              <label class="switch switch-on">
+                <input type="checkbox" name="extension" id="extension">
+                <span class="toggle-slider toggle-red"></span>
+              </label>
+            </div>
+          </div>
+          <div class="grid-box" data-id="card11">
+            <div class="above">
+              <img class="above-img" src="assets/images/logo-dom-snapshot.svg" alt="extensions-icon">
+              <div>
+                <h5>DOM Snapshot</h5>
+                <p>Capture and export DOM structures quickly.</p>
+              </div>
+            </div>
+            <div class="beyond">
+              <div>
+                <button class="remove-btn">Remove</button>
+              </div>
+              <label class="switch">
+                <input type="checkbox" name="extension" id="extension">
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+          </div>
+          <div class="grid-box" data-id="card12">
+            <div class="above">
+              <img class="above-img" src="assets/images/logo-console-plus.svg" alt="extensions-icon">
+              <div>
+                <h5>ConcolePlus</h5>
+                <p>Enhanced developer console with advanced filtering and logging.</p>
+              </div>
+            </div>
+            <div class="beyond">
+              <div>
+                <button class="remove-btn">Remove</button>
+              </div>
+              <label class="switch switch-on">
+                <input type="checkbox" name="extension" id="extension">
+                <span class="toggle-slider toggle-red"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
