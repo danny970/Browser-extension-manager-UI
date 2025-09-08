@@ -121,6 +121,8 @@ a.active:hover {
   background-color: hsl(200, 60%, 99%);
   box-shadow: 1px 1px 7px -5px hsl(227, 75%, 14%);
   padding: 1rem;
+
+  transition: opacity 0.3s ease, tran;
 }
 
 .above {
@@ -195,9 +197,10 @@ button.remove-btn:hover {
 	display: inline-block;
 
 	width: 30px;
-	height: 18px;
+	height: 17.95px;
 
 	position: relative;
+  cursor: pointer;
 }
 
 .toggle-slider {
@@ -210,13 +213,11 @@ button.remove-btn:hover {
 	background-color: hsl(0, 0%, 78%);
 	border-radius: 25px;
 
-	transition: background-color 0.3s ease, transform 0.3s ease;
-  cursor: pointer;
+	transition: background-color 0.3s, transform 0.3s ease;
 }
 
 .toggle-red {
   background-color: hsl(3, 77%, 44%);
-  transform: scale(1.1);
 }
 
 .toggle-slider:hover {
@@ -240,19 +241,11 @@ button.remove-btn:hover {
 	width: 13.3px;
 	height: 13.3px;
 
-	transition: all .4s ease-in-out;
+	transition: all 0.4s ease-in-out;
 }
 
 .toggle-red::before {
 	left: 13.5px;
-}
-
-.switch input:checked+.toggle-slider:before {
-	transform: translateX(12px);
-}
-
-.switch-on input:checked+.toggle-red:before {
-	transform: translateX(-12px);
 }
 
 /* Dark-Theme Styling */
